@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Коробова](https://up.htmlacademy.ru/adaptive/21/user/461211).
-* Наставник: `Неизвестно`.
+* Наставник: Ирина Малиновская.
 
 ---
 
