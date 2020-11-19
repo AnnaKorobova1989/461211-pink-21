@@ -6,8 +6,8 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="logo">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Pink">
+      <a class="page-header__logo">
+        <img class="logo__mobile" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,16 +16,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="">Главная</a>
+              <a class="site-list__link" href="">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="">Фотографии</a>
+              <a class="site-list__link" href="">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="">Конкурс</a>
+              <a class="site-list__link" href="">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="">HTML Academy</a>
+              <a class="site-list__link" href="">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -38,36 +38,36 @@
           <header class="download-app__header">
             <h2 class="download-app__header-name">Взгляните на жизнь иначе!</h2>
           </header>
-          <a href="" class="download-app__button" download>Скачать приложение</a>
-          <div class=download-app__icon-wrapper>
-            <img src="https://via.placeholder.com/47x56" width="47" height="56" alt="Иконка Iphone">
-            <img src="https://via.placeholder.com/43x47" width="43" height="47" alt="Иконка Android">
-            <img src="https://via.placeholder.com/44x41" width="44" height="41" alt="Иконка Windows">
+          <a class="download-app__button" href="" download>Скачать приложение</a>
+          <div class="download-app__icon-wrapper">
+            <img class="download-app__iphone-image" src="https://via.placeholder.com/47x56" width="47" height="56" alt="Иконка Iphone">
+            <img class="download-app__android-image" src="https://via.placeholder.com/43x47" width="43" height="47" alt="Иконка Android">
+            <img class="download-app__windows-image" src="https://via.placeholder.com/44x41" width="44" height="41" alt="Иконка Windows">
           </div>
           <div class="download-app__slogan-wrapper">
-            <p>Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+            <p class="download-app__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </section>
       <section  class="best-offer">
         <h2 class="visually-hidden">Pink - лучшее предложение!</h2>
-        <p>Устали от серости мегаполиса?</p>
-        <p>Нам есть, что вам предложить!</p>
+        <p class="best-offer__text">Устали от серости мегаполиса?</p>
+        <p class="best-offer__text">Нам есть, что вам предложить!</p>
       </section>
       <section class="features">
         <div class="features__wrapper">
           <h2 class="visually-hidden">Блок с преимуществами</h2>
-          <ul class="features__features-list">
-            <li class="features__features-item">
+          <ul class="features__list">
+            <li class="features__item">
               <h3 class="features__title">Поднимает настроение</h3>
               <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="features__features-item">
-              <h3>Меняет мир вокруг</h3>
+            <li class="features__item">
+              <h3 class="features__title">Меняет мир вокруг</h3>
               <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="features__features-item">
-              <h3>Заводит новых друзей</h3>
+            <li class="features__item">
+              <h3 class="features__title">Заводит новых друзей</h3>
               <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
@@ -78,7 +78,7 @@
         <div class="reviews__item">
           <h3 class="reviews__title">Николай Петров</h3>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          <div class="control__buttons">
+          <div class="control">
             <button class="control__button"></button>
             <button class="control__button"></button>
             <button class="control__button"></button>
@@ -88,32 +88,32 @@
       <section class="price">
         <h2 class="visually-hidden">Тарифы</h2>
         <table class="price__table">
-          <tr>
-            <th></th>
-            <th>База<br>1,99 USD</th>
-            <th>Стандарт<br>3,99 USD</th>
-            <th>Анлим<br>9,99 USD</th>
+          <tr class="price__line price__line--caption">
+            <th class="price__caption"></th>
+            <th class="price__caption">База<br>1,99 USD</th>
+            <th class="price__caption">Стандарт<br>3,99 USD</th>
+            <th class="price__caption">Анлим<br>9,99 USD</th>
           </tr>
-          <tr>
-            <td>Розовый фильтр</td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr class="price__line">
+            <td class="price__cell">Розовый фильтр</td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
           </tr>
-          <tr>
-            <td>Смайлики</td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr class="price__line">
+            <td class="price__cell">Смайлики</td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
           </tr>
-          <tr>
-            <td>Комментарии</td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr class="price__line">
+            <td class="price__cell">Комментарии</td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
           </tr>
         </table>
-        <div class="control__buttons">
+        <div class="control">
           <button class="control__button"></button>
           <button class="control__button"></button>
           <button class="control__button"></button>
@@ -124,12 +124,18 @@
         <div class="contacts__wrapper">
           <p class="contacts__slogan">Остались вопросы?</p>
           <p class="contacts__slogan">Свяжитесь с нами!</p>
-          <p class="contacts__header">Звоните:</p>
-          <a class="contacts__item" href="tel:+78125556666">+7 (812)555-66-66</a>
-          <p class="contacts__header">Пишите:</p>
-          <a class="contacts__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          <p class="contacts__header">Приезжайте в гости:</p>
-          <p class="contacts__item">ул. Большая<br> Конюшенная, 19/8</p>
+          <div class="contacts__box">
+            <p class="contacts__header">Звоните:</p>
+            <a class="contacts__item" href="tel:+78125556666">+7 (812)555-66-66</a>
+          </div>
+          <div class="contacts__box">
+            <p class="contacts__header">Пишите:</p>
+            <a class="contacts__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__box">
+            <p class="contacts__header">Приезжайте в гости:</p>
+            <p class="contacts__item">ул. Большая<br> Конюшенная, 19/8</p>
+          </div>
         </div>
       </section>
       <section class="map">
