@@ -1,12 +1,166 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="logo__mobile" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Pink - меняет мир вокруг!</h1>
+      <section class="download-app">
+        <div class="download-app__wrapper">
+          <header class="download-app__header">
+            <h2 class="download-app__header-name">Взгляните на жизнь иначе!</h2>
+          </header>
+          <a class="download-app__button" href="" download>Скачать приложение</a>
+          <div class="download-app__icon-wrapper">
+            <img class="download-app__iphone-image" src="https://via.placeholder.com/47x56" width="47" height="56" alt="Иконка Iphone">
+            <img class="download-app__android-image" src="https://via.placeholder.com/43x47" width="43" height="47" alt="Иконка Android">
+            <img class="download-app__windows-image" src="https://via.placeholder.com/44x41" width="44" height="41" alt="Иконка Windows">
+          </div>
+          <div class="download-app__slogan-wrapper">
+            <p class="download-app__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </section>
+      <section  class="best-offer">
+        <h2 class="visually-hidden">Pink - лучшее предложение!</h2>
+        <p class="best-offer__text">Устали от серости мегаполиса?</p>
+        <p class="best-offer__text">Нам есть, что вам предложить!</p>
+      </section>
+      <section class="features">
+        <div class="features__wrapper">
+          <h2 class="visually-hidden">Блок с преимуществами</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы пользователей приложения Pink</h2>
+        <div class="reviews__item">
+          <h3 class="reviews__title">Николай Петров</h3>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <div class="control">
+            <button class="control__button"></button>
+            <button class="control__button"></button>
+            <button class="control__button"></button>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <table class="price__table">
+          <tr class="price__line price__line--caption">
+            <th class="price__caption"></th>
+            <th class="price__caption">База<br>1,99 USD</th>
+            <th class="price__caption">Стандарт<br>3,99 USD</th>
+            <th class="price__caption">Анлим<br>9,99 USD</th>
+          </tr>
+          <tr class="price__line">
+            <td class="price__cell">Розовый фильтр</td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
+          </tr>
+          <tr class="price__line">
+            <td class="price__cell">Смайлики</td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
+          </tr>
+          <tr class="price__line">
+            <td class="price__cell">Комментарии</td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
+            <td class="price__cell"></td>
+          </tr>
+        </table>
+        <div class="control">
+          <button class="control__button"></button>
+          <button class="control__button"></button>
+          <button class="control__button"></button>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="contacts__wrapper">
+          <p class="contacts__slogan">Остались вопросы?</p>
+          <p class="contacts__slogan">Свяжитесь с нами!</p>
+          <div class="contacts__box">
+            <p class="contacts__header">Звоните:</p>
+            <a class="contacts__item" href="tel:+78125556666">+7 (812)555-66-66</a>
+          </div>
+          <div class="contacts__box">
+            <p class="contacts__header">Пишите:</p>
+            <a class="contacts__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__box">
+            <p class="contacts__header">Приезжайте в гости:</p>
+            <p class="contacts__item">ул. Большая<br> Конюшенная, 19/8</p>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <img src="https://via.placeholder.com/320x200" width="320" height="200" alt="Карта сайта">
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="logo">
+        <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип сайта Pink">
+      </a>
+      <div class="footer__social">
+        <a class="footer__social--twitter" href="">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="twitter">
+        </a>
+        <a class="footer__social--facebook" href="">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="facebook">
+        </a>
+        <a class="footer__social--youtube" href="">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="youtube">
+        </a>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright--info">Разработано</p>
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML academy logo">
+      </div>
+    </footer>
   </body>
 </html>
