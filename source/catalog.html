@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo logo">
+        <img class="logo__mobile" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="main-header__wrapper">
+        <h1 class="main-header">Фотографии пользователей</h1>
+      </div>
+      <section class="gallery">
+        <h2 class="visually-hidden">Фотографии пользователей приложения</h2>
+        <article class="gallery__item">
+          <figure class="gallery__figure gallery__figure--panorama">
+            <a class="gallery__panorama" href="">Панорама дня</a>
+            <img src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама дня">
+            <div class="gallery__depiction">
+              <h3 class="gallery__depiction-header">Анна</h3>
+              <p class="gallery__depiction-text">(5 минут назад)</p>
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              <p class="gallery__like-text">Нравится: 215</p>
+            </div>
+          </figure>
+        </article>
+        <div class="gallery-list">
+          <article class="gallery__article">
+            <figure class="gallery__figure">
+              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
+            </figure>
+            <div class="gallery__depiction">
+              <h3 class="gallery__depiction-header">Левон</h3>
+              <p class="gallery__depiction-text">(5 часов назад)</p>
+              Вчера он на луну летал, сегодня в руки к нам попал.
+              <p class="gallery__like-text">Нравится: 356</p>
+            </div>
+          </article>
+          <article class="gallery__article">
+            <figure class="gallery__figure">
+              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
+            </figure>
+            <div class="gallery__depiction">
+              <h3 class="gallery__depiction-header">Антон</h3>
+              <p class="gallery__depiction-text">(12 часов назад)</p>
+              Соседи будут рады!
+              <p class="gallery__like-text">Нравится: 666</p>
+            </div>
+          </article>
+          <article class="gallery__article">
+            <figure class="gallery__figure">
+              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
+            </figure>
+            <div class="gallery__depiction">
+              <h3 class="gallery__depiction-header">Борис</h3>
+              <p class="gallery__depiction-text">(20 часов назад)</p>
+              Здесь могла быть ваша цитата о высоком и вечном.
+              <p class="gallery__like-text">Нравится: 215</p>
+            </div>
+          </article>
+          <article class="gallery__article">
+            <figure class="gallery__figure">
+              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
+            </figure>
+            <div class="gallery__depiction">
+              <h3 class="gallery__depiction-header">Сергей</h3>
+              <p class="gallery__depiction-text">(25 часов назад)</p>
+              Самая кубанская в мире!
+              <p class="gallery__like-text">Нравится: 4</p>
+            </div>
+          </article>
+          <article class="gallery__article">
+            <figure class="gallery__figure">
+              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
+            </figure>
+            <div class="gallery__depiction">
+              <h3 class="gallery__depiction-header">Максим</h3>
+              <p class="gallery__depiction-text">(40 часов назад)</p>
+              Где снег-то?
+              <p class="gallery__like-text">Нравится: 150</p>
+            </div>
+          </article>
+          <article class="gallery__article">
+            <figure class="gallery__figure">
+              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
+            </figure>
+            <div class="gallery__depiction">
+              <h3 class="gallery__depiction-header">Надежда</h3>
+              <p class="gallery__depiction-text">(45 часов назад)</p>
+              Всем GM и взаимные лайки!
+              <p class="gallery__like-text">Нравится: 2560</p>
+            </div>
+          </article>
+        </div>
+        <p class="gallery-text">Затмите их всех!</p>
+        <p class="gallery-text">Выкладывайте все, что накопилось в телефоне!</p>
+      </section>
+      <section class="foto-redaction">
+        <h2 class="visually-hedden">Редактор фотографий</h2>
+        <div class="foto-redaction__wrapper">
+          <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="">
+          <div class="foto-redaction__panel">
+            <div class="foto-redaction__crop"></div>
+            <div class="foto-redaction__fill"></div>
+            <div class="foto-redaction__contrast"></div>
+          </div>
+          <div class="foto-redaction__range-filter">
+            <div class="foto-redaction__range-controls">
+              <div class="foto-redaction__scale">
+                <div class="foto-redaction__bar"></div>
+              </div>
+              <div class="foto-redaction__toggle"></div>
+            </div>
+          </div>
+          <div class="foto-redaction__buttons-wrapper">
+            <button class="foto-redaction__button foto-redaction__button--upload" type="button" name="button">Запостить</button>
+            <button class="foto-redaction__button foto-redaction__button--cancel" type="button" name="button" disabled>Отмена</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="logo">
+        <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип сайта Pink">
+      </a>
+      <div class="footer__social">
+        <a class="footer__social--twitter" href="">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="twitter">
+        </a>
+        <a class="footer__social--facebook" href="">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="facebook">
+        </a>
+        <a class="footer__social--youtube" href="">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="youtube">
+        </a>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright--info">Разработано</p>
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML academy logo">
+      </div>
+    </footer>
+  </body>
+</html>
