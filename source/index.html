@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header conteiner">
       <a class="page-header__logo logo">
         <img class="logo__mobile" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Pink">
       </a>
@@ -21,13 +21,13 @@
               <a class="site-list__link" href="">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">Фотографии</a>
+              <a class="site-list__link" href="catalog.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -37,21 +37,27 @@
       <h1 class="visually-hidden">Pink - меняет мир вокруг!</h1>
       <section class="download-app">
         <div class="download-app__wrapper">
-          <header class="download-app__header">
+          <header class="download-app__header conteiner">
             <h2 class="download-app__header-name">Взгляните на жизнь иначе!</h2>
           </header>
-          <a class="download-app__button" href="" download type="button">Скачать приложение</a>
-          <div class="download-app__icon-wrapper">
-            <img class="download-app__iphone-image" src="https://via.placeholder.com/47x56" width="47" height="56" alt="Иконка Iphone">
-            <img class="download-app__android-image" src="https://via.placeholder.com/43x47" width="43" height="47" alt="Иконка Android">
-            <img class="download-app__windows-image" src="https://via.placeholder.com/44x41" width="44" height="41" alt="Иконка Windows">
+          <a class="download-app__button conteiner" href="https://www.apple.com/ru/app-store/" download>Скачать приложение</a>
+          <div class="download-app__icon-wrapper conteiner">
+            <a class="download-app__iphone-link" href="https://www.apple.com/ru/app-store/">
+              <img class="download-app__iphone-image" src="https://via.placeholder.com/47x56" width="47" height="56" alt="Иконка Iphone">
+            </a>
+            <a class="download-app__android-link" href="https://play.google.com/apps">
+              <img class="download-app__android-image" src="https://via.placeholder.com/43x47" width="43" height="47" alt="Иконка Android">
+            </a>
+            <a class="download-app__windows-link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+              <img class="download-app__windows-image" src="https://via.placeholder.com/44x41" width="44" height="41" alt="Иконка Windows">
+            </a>
           </div>
-          <div class="download-app__slogan-wrapper">
+          <div class="download-app__slogan-wrapper conteiner">
             <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </section>
-      <section class="best-offer">
+      <section class="best-offer conteiner">
         <h2 class="visually-hidden">Pink - лучшее предложение!</h2>
         <p class="best-offer__text">Устали от серости мегаполиса?</p>
         <p class="best-offer__text">Нам есть, что вам предложить!</p>
@@ -75,7 +81,7 @@
           </ul>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews conteiner">
         <h2 class="visually-hidden">Отзывы пользователей приложения Pink</h2>
         <div class="reviews__item">
           <h3 class="reviews__title">Николай Петров</h3>
@@ -121,7 +127,7 @@
           <button class="control__button" type="button"></button>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts conteiner">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__wrapper">
           <p class="contacts__slogan">Остались вопросы?</p>
@@ -141,11 +147,12 @@
         </div>
       </section>
       <section class="map">
+        <h3 class="visually-hidden">Мы на карте</h3>
         <img src="https://via.placeholder.com/320x200" width="320" height="200" alt="Карта сайта">
       </section>
     </main>
-    <footer class="footer">
-      <a class="logo">
+    <footer class="footer conteiner">
+      <a class="logo" href="">
         <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип сайта Pink">
       </a>
       <div class="footer__social">
@@ -160,8 +167,10 @@
         </a>
       </div>
       <div class="footer__copyright">
-        <p class="footer__copyright--info">Разработано</p>
-        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML academy logo">
+        <a class="footer__copyright--info" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML academy logo">
+        </a>
       </div>
     </footer>
   </body>
