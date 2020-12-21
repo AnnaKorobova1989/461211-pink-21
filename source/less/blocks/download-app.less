@@ -1,12 +1,18 @@
 .download-app {
   background-color: rgb(@dark-blue);
+  background-image: url("../img/page-main-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
 .download-app__header {
   height: 397px;
-  background-image: url("../img/page-main-background.jpg");
-  background-repeat: no-repeat;
-  background-position: left 0;
+}
+
+.download-app__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .download-app__header-name {
@@ -25,9 +31,40 @@
   text-decoration: none;
 }
 
+.download-app__header-name {
+  margin: 0;
+}
+
 .download-app__text {
   color: @white;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .download-app__header-name {
+    padding-top: 300px;
+  }
+  .download-app {
+    background-image: url("../img/background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+  .download-app__wrapper {
+    width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app {
+    background-image: url("../img/background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+  .download-app__wrapper {
+    width: 940px;
+    padding: 0 130px;
+  }
 }
