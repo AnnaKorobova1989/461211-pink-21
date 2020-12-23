@@ -4,12 +4,36 @@
   font-style: normal;
   color: @white;
   font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .main-header__wrapper {
+  margin: 0 auto;
   background-color: @dark-blue;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 20% 20%;
-  height: 170px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
+  .main-header__wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
+  .main-header__wrapper {
+    padding: 0 130px;
+  }
 }
