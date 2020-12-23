@@ -1,6 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer__copyright--info {
   font-size: 14px;
   line-height: 18px;
   color: @font-dark;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    width: 620px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: 940px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }

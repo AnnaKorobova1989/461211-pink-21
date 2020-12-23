@@ -1,12 +1,51 @@
+.reviwes {
+  width: 280px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__title {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   font-style: normal;
+  text-align: center;
 }
 
 .reviews__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+}
+
+.reviews__subtitle {
+  display: none;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__subtitle {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    order: 2;
+  }
+  .reviews__title {
+    font-size: 20px;
+    order: 1;
+  }
+  .reviews__text {
+    order: 0;
+  }
+  .review__control {
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }
