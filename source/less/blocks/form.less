@@ -4,6 +4,12 @@
   font-style: normal;
   font-weight: normal;
   color: @font-dark;
+  text-align: center;
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__label {
@@ -66,4 +72,59 @@
 
 .form__footnote {
   color: @font-pink;
+}
+
+@media (min-width: @tablet-width) {
+  .form__header {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+  .form__fieldset--name {
+    order: -4;
+  }
+  .form__fieldset--application {
+    order: -3;
+  }
+  .form__fieldset--achievements {
+    order: -2;
+  }
+  .form__fieldset--address {
+    order: -1;
+  }
+  .form__fieldset--review {
+    order: 0;
+  }
+  .form__textarea {
+    width: 495px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__fieldset--name {
+    width: calc(45%);
+  }
+  .form__fieldset--application {
+    width: calc(45%);
+  }
+  .form__fieldset--achievements {
+    width: 100%;
+  }
+  .form__fieldset--address {
+    width: 100%;
+  }
+  .form__fieldset--review {
+    width: 100%;
+  }
+  .form__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 130px;
+    justify-content: space-between;
+  }
+  .form__textarea {
+    width: 815px;
+    margin: 0 auto;
+  }
 }
