@@ -1,3 +1,18 @@
 .control {
   text-align: center;
 }
+
+.control__button {
+  border-radius: 50%;
+  background-color: fade(@font-dark, 30%);
+  width: 6px;
+  height: 6px;
+  border: none;
+  padding: 0;
+}
+
+.control__button--active {
+  border: 3px solid @font-dark;
+  box-sizing: content-box;
+  background-color: @white;
+}

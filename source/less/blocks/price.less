@@ -1,8 +1,19 @@
 .price {
-  background-color: @grey;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-image: url("../img/grey-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.price__table {
-  display: flex;
-  justify-content: center;
+@media (min-width: @tablet-width) {
+  .price {
+    background-image: url("../img/grey-background-tablet.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price {
+    background-image: url("../img/background-desk.png");
+  }
 }
