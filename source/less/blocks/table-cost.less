@@ -5,6 +5,7 @@
   width: 262.5%;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 37px;
 }
 
 .table-cost__row {
@@ -34,7 +35,7 @@
 .table-cost__setting {
   z-index: 1;
   position: absolute;
-  left: 37%;
+  left: 36%;
   background-color: #fff;
   color: @font-dark;
   font-size: 14px;
@@ -53,6 +54,11 @@
 
 .table-cost__cell {
   position: relative;
+}
+
+.table-cost__value {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .table-cost__available {
@@ -86,6 +92,10 @@
   line-height: 30px;
   font-weight: bold;
   background-color: @font-dark;
+}
+
+.table-cost__caption-cell--hit {
+  width: 275px;
 }
 
 .table-cost__caption-cell--hit::after {
@@ -154,7 +164,7 @@
       left: -81%;
     }
     .table-cost__setting {
-      left: 37%;
+      left: 36%;
     }
   }
   .price--right {
@@ -165,6 +175,4 @@
       left: 68%;
     }
   }
-}
-
 }

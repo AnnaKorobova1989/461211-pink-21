@@ -1,5 +1,6 @@
 .reviwes {
   width: 280px;
+  position: relative;
 }
 
 .reviews__item {
@@ -13,6 +14,7 @@
   font-weight: bold;
   font-style: normal;
   text-align: center;
+  margin-top: 40px;
 }
 
 .reviews__text {
@@ -20,11 +22,20 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  margin-top: -5px;
 }
 
 .reviews__subtitle {
   display: none;
   text-align: center;
+}
+
+.review__control {
+  position: absolute;
+  left: 50%;
+  top: 228%;
+  transform: translate(-50%);
+  display: flex;
 }
 
 @media (min-width: @tablet-width) {
