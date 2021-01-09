@@ -22,3 +22,13 @@
   background-size: cover;
   background-position: center;
 }
+
+@media (min-width: @desktop-width) {
+  .map__iframe {
+    width: 660px;
+    height: 375px;
+  }
+  .map::after {
+    background-image: url("../img/triangle-tablet.png");
+  }
+}
