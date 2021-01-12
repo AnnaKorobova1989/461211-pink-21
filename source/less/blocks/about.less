@@ -1,13 +1,14 @@
 .about {
   display: none;
-  width: 620px;
   margin: 0 auto;
   position: relative;
-  padding-left: 315px;
   min-height: 420px;
-  background-image: url("../img/effect24.svg");
-  background-repeat: no-repeat;
-  background-position: 8px 23px;
+}
+
+.about__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .about__header {
@@ -38,27 +39,32 @@
 @media (min-width: @tablet-width) {
   .about {
     display: block;
-    width: 320px;
+  }
+  .about__wrapper {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .about__info-container {
+    width: 300px;
+    margin-left: 310px;
+    position: relative;
+  }
+  .about__info-container::after {
+    content: "";
+    width: 240px;
+    height: 275px;
+    position: absolute;
+    background-image: url("../img/effect24.svg");
+    background-repeat: no-repeat;
+    top: 25px;
+    left: -310px;
+  }
+  .about__text {
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .about {
-    width: 540px;
-    margin: 0 auto;
-    position: relative;
-    padding-left: 365px;
-    background-image: url("../img/effect24-desktop.svg");
-  }
-  .about__header {
-    line-height: 30px;
-  }
-  .about__text {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .about__link {
-    font-size: 18px;
-    line-height: 30px;
-  }
+
 }

@@ -1,13 +1,16 @@
 .map {
   display: flex;
   justify-content: center;
-  position: relative;
   margin: 0 auto;
   max-height: 500px;
   height: 100px;
   width: 100%;
   max-width: 940px;
-  margin-top: -85px;
+  margin-top: 0px;
+}
+
+.map__iframe {
+  height: 200px;
 }
 
 .map::after {
@@ -18,7 +21,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../img/triangle-white.png");
+  // background-image: url("../img/triangle-white.png");
   background-size: cover;
   background-position: center;
 }
