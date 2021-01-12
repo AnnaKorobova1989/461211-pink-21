@@ -16,20 +16,19 @@ var activeVariety = "price--center";
   };
 
 
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
-  var pageHeader = document.querySelector('.page-header');
+  var menu = document.querySelector(".main-nav--no-js");
+  var open_button = document.querySelector(".button-open");
+  var close_button = document.querySelector(".button-close");
 
-  navMain.classList.remove('main-nav--nojs');
 
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-      pageHeader.classList.add('page-header__menu-opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-      pageHeader.classList.remove('page-header__menu-opened');
-    }
-  });
+  menu.classList.remove("main-nav--no-js");
+
+  open_button.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    menu.classList.add("main-nav--active-menu");
+  })
+
+  close_button.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    menu.classList.remove("main-nav--active-menu");
+  })

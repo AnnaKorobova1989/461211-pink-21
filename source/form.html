@@ -8,32 +8,35 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__container">
-        <a class="page-header__logo logo" href="index.html">
-          <img class="logo__mobile" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Pink">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
+      <nav class="page-header__navigation main-nav main-nav--no-js">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__header">
+              <p class="main-nav__logo">
+              <a href="index.html" class="main-nav__logo-link"></a>
+            </p>
+            <button class="main-nav__button button-open">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <button class="main-nav__button button-close">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
           </div>
-        </nav>
+        <ul class="main-nav__list">
+          <li class="main-nav__item item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/" class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
       </div>
+      </nav>
     </header>
     <main class="page-main">
       <div class="main-header__wrapper container">
