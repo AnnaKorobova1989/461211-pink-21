@@ -2,15 +2,21 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  max-height: 500px;
   height: 100px;
   width: 100%;
-  max-width: 940px;
   margin-top: 0px;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-.map__iframe {
-  height: 200px;
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .map::after {
@@ -26,12 +32,38 @@
   background-position: center;
 }
 
-@media (min-width: @desktop-width) {
-  .map__iframe {
-    width: 660px;
+@media (min-width: @tablet-width) {
+  .map {
     height: 375px;
+    margin-top: 0px;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
   }
-  .map::after {
-    background-image: url("../img/triangle-tablet.png");
+  .map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    height: 375px;
+    margin-top: 0px;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }

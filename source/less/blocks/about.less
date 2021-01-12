@@ -66,5 +66,41 @@
 }
 
 @media (min-width: @desktop-width) {
-
+  .about {
+    background-color: @grey;
+    margin-top: -30px;
+  }
+  .about__wrapper {
+    width: 960px;
+    padding: 0 120px;
+    margin: 0 auto;
+  }
+  .about__info-container::after {
+    width: 300px;
+    height: 345px;
+    top: 35px;
+    left: -370px;
+    background-image: url("../img/effect24-desktop.svg");
+  }
+  .about__header {
+    width: 400px;
+    padding-top: 127px;
+  }
+  .about__info-container {
+    width: 530px;
+    margin-left: 380px;
+    position: relative;
+  }
+  .about__text {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .about__link {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
