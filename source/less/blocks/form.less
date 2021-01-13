@@ -5,6 +5,8 @@
   font-weight: normal;
   color: @font-dark;
   text-align: center;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
 .form__form {
@@ -26,6 +28,28 @@
   line-height: 30px;
 }
 
+.form__fieldset {
+  border: none;
+}
+
+.form__fieldset--name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  padding: 23px 20px;
+  border: 2px solid @border-color;
+  border-radius: 1px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form__input:hover {
+  border: 2px solid @font-pink;
+}
+
 .form__fieldset--achievements {
   background-color: @grey;
 }
@@ -38,20 +62,108 @@
   text-transform: uppercase;
 }
 
-.form__input-check {
+.form__label-check {
+  display: block;
   color: @font-dark;
   font-size: 18px;
   line-height: 30px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  margin-top: 40px;
+  padding-left: 60px;
 }
 
-.form__label--radio {
+.form__check-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__check-box {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  background-color: @white;
+  border: 2px solid @border-color;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
+.form__check-box:hover {
+  border: 2px solid @font-dark;
+}
+
+.form__check-box:active {
+  border: 2px solid @font-pink;
+}
+
+.form__check-input:checked + .form__check-box {
+  background-image: url("../img/tick.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form__label-radio {
+  display: block;
+  position: relative;
   color: @font-dark;
   font-size: 18px;
   line-height: 30px;
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+.form__input-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__radio-box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid @border-color;
+  background-color: @white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__radio-box:hover {
+  border: 2px solid @font-dark;
+}
+
+.form__radio-box:active {
+    border: 2px solid @font-pink;
+}
+
+.form__input-radio:checked + .form__radio-box {
+  background-image: url("../img/ellipse.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .form__textarea {
+  display: flex;
   resize: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: @font-grey;
+  padding: 22px 20px;
+  box-sizing: border-box;
+  border: 2px solid @border-color;
+  border-radius: 1px;
+  width: 100%;
 }
 
 .form__textarea::placeholder {
@@ -65,6 +177,15 @@
   color: @white;
   font-size: 18px;
   line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid @green-button;
+  border-radius: 1px;
+  padding: 23px 45px;
+  margin-left: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 280px;
 }
 
 .form__notice {

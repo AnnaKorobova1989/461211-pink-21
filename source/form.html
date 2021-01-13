@@ -42,10 +42,10 @@
       <div class="main-header__wrapper container">
         <h1 class="main-header">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <section class="form container">
+      <section class="form">
         <h2 class="form__header container">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!</h2>
         <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__fieldset form__fieldset--name">
+          <fieldset class="form__fieldset form__fieldset--name container">
             <label class="form__label form__label--surname"> Фамилия:
               <input class="form__input form__input--surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
             </label>
@@ -56,30 +56,36 @@
               <input class="form__input form__input--patronymic" name="patronymic" type="text" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--achievements">
+          <fieldset class="form__fieldset form__fieldset--achievements container">
             <h2 class="form__block-name">Ваши безбашенные достижения в путешествии</h2>
-            <label class="form__input-check">
-              <input class="form__check-box" type="checkbox" name="shark" checked>
+            <label class="form__label-check">
+              <input class="form__check-input" type="checkbox" name="shark" checked>
+              <span class="form__check-box"></span>
               Сделал селфи с акулой
             </label>
-            <label class="form__input-check">
-              <input class="form__check-box" type="checkbox" name="beach" checked>
+            <label class="form__label-check">
+              <input class="form__check-input" type="checkbox" name="beach" checked>
+              <span class="form__check-box"></span>
               Обгорел на пляже
             </label>
-            <label class="form__input-check">
-              <input class="form__check-box" type="checkbox" name="chuck">
+            <label class="form__label-check">
+              <input class="form__check-input" type="checkbox" name="chuck">
+              <span class="form__check-box"></span>
               Видел Чака Норриса
             </label>
-            <label class="form__input-check">
-              <input class="form__check-box" type="checkbox" name="momento">
+            <label class="form__label-check">
+              <input class="form__check-input" type="checkbox" name="momento">
+              <span class="form__check-box"></span>
               Накупил сувениров
             </label>
-            <label class="form__input-check">
-              <input class="form__check-box" type="checkbox" name="tower" checked>
+            <label class="form__label-check">
+              <input class="form__check-input" type="checkbox" name="tower" checked>
+              <span class="form__check-box"></span>
               Удержал башню
             </label>
-            <label class="form__input-check">
-              <input class="form__check-box" type="checkbox" name="hotel">
+            <label class="form__label-check">
+              <input class="form__check-input" type="checkbox" name="hotel">
+              <span class="form__check-box"></span>
               Разгромил отель
             </label>
           </fieldset>
@@ -93,16 +99,19 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--application">
             <h2 class="form__block-name">С каким приложением путешествовали?</h2>
-            <label class="form-label form__label--radio">
-              <input class="form-input form__input--radio" type="radio" name="ios" id="ios" value="0" checked>
+            <label class="form__label form__label-radio">
+              <input class="form__input-radio" type="radio" name="application" id="ios" value="0" checked>
+              <span class="form__radio-box"></span>
               Pink для iOS
             </label>
-            <label class="form-label form__label--radio">
-              <input class="form-input form__input--radio" type="radio" name="android" id="android" value="0">
+            <label class="form__label form__label-radio">
+              <input class="form__input-radio" type="radio" name="application" id="android" value="0">
+              <span class="form__radio-box"></span>
               Pink на Android
             </label>
-            <label class="form-label form__label--radio">
-              <input class="form-input form__input--radio" type="radio" name="windows" id="windows" value="0">
+            <label class="form__label form__label-radio">
+              <input class="form__input-radio" type="radio" name="application" id="windows" value="0">
+              <span class="form__radio-box"></span>
               Windows Phone
             </label>
           </fieldset>
