@@ -3,8 +3,22 @@
   background-color: rgb(@dark-blue);
   background-repeat: no-repeat;
   background-position: center 2%;
+  position: relative;
+  box-sizing: border-box;
   z-index: 0;
   background-size: 100%;
+  position: relative;
+}
+
+.download-app::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/hand-phone-mobile.png");
+  bottom: 37%;
+  left: 9%;
+  width: 280px;
+  height: 286px;
+  margin: 0 auto;
 }
 
 .download-app__header {
@@ -94,6 +108,8 @@
     background-image: url("../img/background-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center 80%;
+    height: 730px;
+    background-size: cover;
   }
   .download-app__button {
     width: 300px;
@@ -117,6 +133,16 @@
   .download-app__text {
     font-size: 18px;
     line-height: 24px;
+  }
+  .download-app::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/hand-phone-tablet.png");
+    bottom: 0%;
+    left: 0%;
+    width: 660px;
+    height: 545px;
+    z-index: -1;
   }
 }
 
@@ -146,5 +172,15 @@
   }
   .download-app__slogan-wrapper {
     margin-top: 42px;
+  }
+  .download-app::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/hand-phone-desktop.png");
+    bottom: 0%;
+    left: 12%;
+    width: 1050px;
+    height: 645px;
+    z-index: -1;
   }
 }

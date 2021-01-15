@@ -1,69 +1,72 @@
 .map {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  height: 100px;
+  height: 200px;
   width: 100%;
-  margin-top: 0px;
   overflow: hidden;
-  padding-bottom: 56.25%;
   position: relative;
-  height: 0;
 }
 
 .map iframe {
-  left: 0;
-  top: 0;
   height: 100%;
   width: 100%;
-  position: absolute;
 }
 
-.map::after {
-  z-index: 1;
+.map::before {
   content: "";
-  width: 100%;
-  height: 125px;
   position: absolute;
-  top: 0;
-  left: 0;
-  // background-image: url("../img/triangle-white.png");
-  background-size: cover;
-  background-position: center;
+  z-index: 1;
+  width: 100%;
+  height: 123px;
+  top: -32px;
+  background-image: url("../img/triangle-tablet.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+}
+
+@media (min-width: @mobile-width-only) {
+  .map {
+    width: 100%;
+    height: 375px;
+  }
+  .map iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .map::after {
+    background-image: url("../img/triangle-tablet.svg");
+    width: 100%;
+    height: 123px;
+    top: 0;
+    background-position: top;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .map {
+    width: 100%;
     height: 375px;
-    margin-top: 0px;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
   }
   .map iframe {
-    left: 0;
-    top: 0;
     height: 100%;
     width: 100%;
-    position: absolute;
+  }
+  .map::after {
+    background-image: url("../img/triangle-desktop.svg");
+    width: 100%;
+    height: 123px;
+    top: 0;
+    background-position: top;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
-    height: 375px;
-    margin-top: 0px;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
+    width: 100%;
+    height: 500px;
   }
   .map iframe {
-    left: 0;
-    top: 0;
     height: 100%;
     width: 100%;
-    position: absolute;
   }
 }
