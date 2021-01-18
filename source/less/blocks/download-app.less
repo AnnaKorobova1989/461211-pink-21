@@ -1,21 +1,27 @@
 .download-app {
+  position: relative;
+  background-color: rgb(@dark-blue);
+  min-height: 740px;
+}
+
+.download-app__background {
   background-image: url("../img/page-main-background.jpg");
   background-color: rgb(@dark-blue);
   background-repeat: no-repeat;
-  background-position: center 2%;
+  background-position: center 5px;
   position: relative;
   box-sizing: border-box;
   z-index: 0;
   background-size: 100%;
-  position: relative;
+  height: 468px;
 }
 
-.download-app::after {
+.download-app__background::after {
   content: "";
   position: absolute;
   background-image: url("../img/hand-phone-mobile.png");
-  bottom: 37%;
-  left: 9%;
+  bottom: 0%;
+  left: 0%;
   width: 280px;
   height: 286px;
   margin: 0 auto;
@@ -94,8 +100,9 @@
 
 @media (min-width: @tablet-width) {
   .download-app__header {
-    width: 245px;
+    width: 230px;
     padding-top: 0;
+    position: relative;
   }
   .download-app__header-name {
     padding-top: 210px;
@@ -103,22 +110,29 @@
     font-size: 40px;
     line-height: 48px;
     font-weight: 300;
+    position: absolute;
   }
-  .download-app {
+  .download-app__background {
     background-image: url("../img/background-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: center 80%;
-    height: 730px;
+    background-position: 1px 9px;
+    height: 740px;
     background-size: cover;
+  }
+  .download-app__download-buttons {
+    background-color: transparent;
+    position: absolute;
+    top: 458px;
   }
   .download-app__button {
     width: 300px;
     margin-top: -70px;
+    cursor: pointer;
   }
   .download-app__wrapper {
     width: 620px;
     padding: 0 20px;
-    height: 740px;
+    height: 800px;
   }
   .download-app__icon-wrapper {
     width: 210px;
@@ -134,7 +148,7 @@
     font-size: 18px;
     line-height: 24px;
   }
-  .download-app::after {
+  .download-app__background::after {
     content: "";
     position: absolute;
     background-image: url("../img/hand-phone-tablet.png");
@@ -147,7 +161,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .download-app {
+  .download-app__background {
     background-image: url("../img/background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center 44px;
@@ -156,6 +170,7 @@
   .download-app__wrapper {
     width: 940px;
     padding: 0 130px;
+    margin: 0 auto;
   }
   .download-app__header-name {
     font-size: 50px;
@@ -173,7 +188,7 @@
   .download-app__slogan-wrapper {
     margin-top: 42px;
   }
-  .download-app::after {
+  .download-app__background::after {
     content: "";
     position: absolute;
     background-image: url("../img/hand-phone-desktop.png");
@@ -182,5 +197,13 @@
     width: 1050px;
     height: 645px;
     z-index: -1;
+  }
+  .download-app__header {
+    position: relative;
+  }
+  .download-app__header-name {
+    position: absolute;
+    top: -1px;
+    left: 15px;
   }
 }
