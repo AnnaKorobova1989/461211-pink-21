@@ -1,6 +1,6 @@
 .gallery__slogan {
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 14px;
+  line-height: 30px;
   font-weight: 300;
   text-align: center;
 }
@@ -14,9 +14,12 @@
   display: block;
   font-size: 12px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: bold;
   background-color: @font-pink;
   text-transform: uppercase;
+  padding: 7px 20px;
+  box-sizing: border-box;
+  font-family: inherit;
 }
 
 .gallery__figure {
@@ -25,7 +28,18 @@
 
 .gallery__figure--panorama {
   position: relative;
+  margin: 0;
+}
+
+.gallery__description--panorama {
   margin: 0 20px;
+  margin-left: 0;
+}
+
+.gallery__description-panorama--wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .gallery__description-header {
