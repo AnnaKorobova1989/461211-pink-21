@@ -4,20 +4,61 @@
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  padding-top: 18px;
-  padding-bottom: 25px;
+  margin-top: -5px;
+}
+
+.best-offer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 70px;
+}
+
+.best-offer__text-offer {
+  padding-top: 30px;
+}
+
+.best-offer__text {
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
+  .best-offer {
+    margin-bottom: -100px;
+  }
   .best-offer__text {
     font-size: 40px;
     line-height: 54px;
   }
+  .best-offer__text-offer {
+    width: 580px;
+    padding-top: 0;
+  }
+  .best-offer__wrapper {
+    width: 620px;
+    padding: 3px 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .best-offer {
+    margin-top: 62px;
+  }
   .best-offer__text {
     font-size: 50px;
     line-height: 68px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .best-offer__wrapper {
+    width: 940px;
+    padding: 0 130px;
+  }
+  .best-offer__text-offer {
+    padding-top: 0;
   }
 }

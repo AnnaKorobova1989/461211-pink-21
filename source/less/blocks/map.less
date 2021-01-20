@@ -1,4 +1,82 @@
 .map {
   display: flex;
-  justify-content: center;
+  height: 215px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 123px;
+  top: -43px;
+  background-image: url("../img/triangle-tablet.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+}
+
+@media (min-width: @mobile-width-only) {
+  .map {
+    width: 100%;
+    height: 375px;
+  }
+  .map iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .map::before {
+    background-image: url("../img/triangle-tablet.svg");
+    width: 100%;
+    height: 123px;
+    top: 0;
+    background-position: top;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    width: 100%;
+    height: 392px;
+    margin-top: -10px;
+    margin-bottom: -52px;
+  }
+  .map iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .map::before {
+    background-image: url("../img/triangle-desktop.svg");
+    width: 100%;
+    height: 122px;
+    top: -29px;
+    background-position: top;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    width: 100%;
+    height: 500px;
+    margin-bottom: -40px;
+  }
+  .map iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .map::before {
+    background-image: url("../img/triangle-desktop.svg");
+    width: 100%;
+    height: 122px;
+    top: -12px;
+    background-position: top;
+  }
 }

@@ -8,63 +8,85 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo logo">
-        <img class="logo__mobile" src="img/logo-mobile-header.svg" width="74" height="23" alt="Логотип сайта Pink">
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <nav class="page-header__navigation main-nav main-nav--no-js">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+          <div class="main-nav__header">
+              <p class="main-nav__logo">
+              <a href="index.html" class="main-nav__logo-link"></a>
+            </p>
+            <button class="main-nav__button button-open">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <button class="main-nav__button button-close">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
+          </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/" class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Pink - меняет мир вокруг!</h1>
       <section class="download-app">
-        <div class="download-app__wrapper">
-          <header class="download-app__header container">
-            <h2 class="download-app__header-name">Взгляните на жизнь иначе!</h2>
-          </header>
-          <a class="download-app__button" href="https://www.apple.com/ru/app-store/" download>Скачать приложение</a>
-          <div class="download-app__icon-wrapper container">
-            <a class="download-app__iphone-link" href="https://www.apple.com/ru/app-store/">
-              <img class="download-app__iphone-image" src="img/apple-logo.svg" width="47" height="56" alt="Иконка Iphone">
-            </a>
-            <a class="download-app__android-link" href="https://play.google.com/apps">
-              <img class="download-app__android-image" src="img/android-logo.svg" width="43" height="47" alt="Иконка Android">
-            </a>
-            <a class="download-app__windows-link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
-              <img class="download-app__windows-image" src="img/microsoft-logo.svg" width="44" height="41" alt="Иконка Windows">
-            </a>
-          </div>
-          <div class="download-app__slogan-wrapper container">
-            <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="download-app__background">
+          <div class="download-app__wrapper">
+            <header class="download-app__header container">
+              <h2 class="download-app__header-name">Взгляните на жизнь иначе!</h2>
+            </header>
+            <div class="download-app__download-buttons">
+              <a class="download-app__button" href="https://www.apple.com/ru/app-store/" download>Скачать приложение</a>
+              <div class="download-app__icon-wrapper">
+                <a class="download-app__iphone-link" href="https://www.apple.com/ru/app-store/">
+                  <img class="download-app__iphone-image" src="img/apple-logo.svg" width="47" height="56" alt="Иконка Iphone">
+                </a>
+                <a class="download-app__android-link" href="https://play.google.com/apps">
+                  <img class="download-app__android-image" src="img/android-logo.svg" width="43" height="47" alt="Иконка Android">
+                </a>
+                <a class="download-app__windows-link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+                  <img class="download-app__windows-image" src="img/microsoft-logo.svg" width="44" height="41" alt="Иконка Windows">
+                </a>
+              </div>
+              <div class="download-app__slogan-wrapper container">
+                <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="best-offer container">
-        <h2 class="visually-hidden">Pink - лучшее предложение!</h2>
-        <p class="best-offer__text">Устали от серости мегаполиса?</p>
-        <p class="best-offer__text">Нам есть, что вам предложить!</p>
+      <section class="best-offer">
+        <div class="best-offer__wrapper">
+          <h2 class="visually-hidden">Pink - лучшее предложение!</h2>
+          <p class="best-offer__text">Устали от серости мегаполиса?</p>
+          <p class="best-offer__text best-offer__text-offer">Нам есть, что вам предложить!</p>
+        </div>
       </section>
       <section class="features">
         <div class="features__wrapper">
           <h2 class="visually-hidden">Блок с преимуществами</h2>
+          <ul class="features__pictures">
+            <li class="features__pictures-item">
+              <img src="img/mood.png" alt="" width="186" height="382">
+            </li>
+            <li class="features__pictures-item">
+              <img src="img/peace.png" alt="" width="186" height="382">
+            </li>
+            <li class="features__pictures-item">
+              <img src="img/friends.png" alt="" width="186" height="382">
+            </li>
+          </ul>
           <ul class="features__list features__list-container">
             <li class="features__item">
               <h3 class="features__title">Поднимает настроение</h3>
@@ -82,27 +104,39 @@
         </div>
       </section>
       <section class="about">
-        <h3 class="about__header">Эффект на 24 часа!</h3>
-        <p class="about__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="about__link">Узнать больше об исследовании</a>
+        <div class="about__wrapper">
+          <div class="about__info-container">
+            <h3 class="about__header">Эффект на&nbsp;24 часа!</h3>
+            <p class="about__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="about__link">Узнать больше об исследовании</a>
+            </div>
+        </div>
       </section>
-      <section class="reviews container">
-        <h2 class="visually-hidden">Отзывы пользователей приложения Pink</h2>
-        <div class="reviews__item">
-          <h3 class="reviews__title">Николай Петров</h3>
-          <p class="reviews__subtitle">25 лет, водитель трамвая</p>
-          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          <div class="review__control control">
-            <button class="control__button control__button--active" type="button"></button>
-            <button class="control__button" type="button"></button>
-            <button class="control__button" type="button"></button>
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <h2 class="visually-hidden">Отзывы пользователей приложения Pink</h2>
+          <div class="reviews__item">
+            <h3 class="reviews__title">Николай Петров</h3>
+            <p class="reviews__subtitle">25 лет, водитель трамвая</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
+          <div class="reviews__control control">
+            <button class="control__button control__button--left control__button--active" type="button"></button>
+            <button class="control__button control__button--center" type="button"></button>
+            <button class="control__button control__button--right" type="button"></button>
+          </div>
+          <button class="reviews__arrow reviews__arrow--left" type="button" name="button">
+            <img src="img/left-arrow.svg" width="" height="" alt="">
+          </button>
+          <button class="reviews__arrow reviews__arrow--right" type="button" name="button">
+            <img src="img/right-arrow.svg" width="" height="" alt="">
+          </button>
         </div>
       </section>
       <section class="price price--center">
         <h2 class="visually-hidden">Тарифы</h2>
         <table class="price__table table-cost">
-          <tr class="table-cost__row table-cost__caption-row">
+          <tr class="table-cost__caption-row">
             <th class="table-cost__caption-cell--empty table-cost__caption-cell--first"></th>
             <th class="table-cost__caption-cell">
               <b class="table-cost__title">База</b>
@@ -136,10 +170,10 @@
             <td class="table-cost__cell"><span class="table-cost__available">Доступен</span></td>
           </tr>
         </table>
-        <div class="control">
-          <button class="control__button" type="button"></button>
-          <button class="control__button control__button--active" type="button"></button>
-          <button class="control__button" type="button"></button>
+        <div class="table-cost__control control">
+          <button class="control__button control__button--left" type="button"></button>
+          <button class="control__button control__button--center control__button--active" type="button"></button>
+          <button class="control__button control__button--right" type="button"></button>
         </div>
       </section>
       <section class="contacts container">
@@ -155,39 +189,35 @@
             <p class="contacts__header">Пишите:</p>
             <a class="contacts__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-          <div class="contacts__box">
+          <div class="contacts__box contacts__box--address">
             <p class="contacts__header">Приезжайте в гости:</p>
-            <p class="contacts__item">ул. Большая Конюшенная, 19/8</p>
+            <p class="contacts__item">ул. Большая Конюшенная,&nbsp;19/8</p>
           </div>
         </div>
       </section>
       <section class="map">
         <h3 class="visually-hidden">Мы на карте</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609830378562!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609830378562!5m2!1sru!2sru" width="320" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
-    <footer class="footer container">
-      <a class="logo" href="">
-        <img src="img/footer-logo.svg" width="145" height="40" alt="Логотип сайта Pink">
-      </a>
-      <div class="footer__social">
-        <a class="footer__social-icon footer__social--twitter" href="">
-          <img src="img/twitter.svg" width="48" height="48" alt="twitter">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="logo" href="">
+          <img src="img/footer-logo.svg" width="145" height="40" alt="Логотип сайта Pink">
         </a>
-        <a class="footer__social-icon footer__social--facebook" href="">
-          <img src="img/facebook.svg" width="48" height="48" alt="facebook">
-        </a>
-        <a class="footer__social-icon footer__social--youtube" href="">
-          <img src="img/youtube.svg" width="48" height="48" alt="youtube">
-        </a>
-      </div>
-      <div class="footer__copyright">
-        <a class="footer__copyright--info" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-        <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/academy.svg" width="27" height="34" alt="HTML academy logo">
-        </a>
+        <div class="footer__social">
+          <a class="footer__social-icon footer__social--twitter" href=""></a>
+          <a class="footer__social-icon footer__social--facebook" href=""></a>
+          <a class="footer__social-icon footer__social--youtube" href=""></a>
+        </div>
+        <div class="footer__copyright">
+          <a class="footer__copyright--info" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+          <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/academy.svg" width="27" height="34" alt="HTML academy logo">
+          </a>
+        </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+      <script src="js/script.js"></script>
   </body>
 </html>
