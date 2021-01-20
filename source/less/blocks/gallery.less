@@ -1,8 +1,12 @@
 .gallery__slogan {
   font-size: 14px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: normal;
   text-align: center;
+  padding-top: 44px;
+  width: 250px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .gallery__panorama {
@@ -28,24 +32,36 @@
 
 .gallery__figure--panorama {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
+  width: 320px;
 }
 
 .gallery__description--panorama {
-  margin: 0 20px;
-  margin-left: 0;
+  margin-top: -20px;
 }
 
 .gallery__description-panorama--wrapper {
   width: 280px;
-  padding: 0 20px;
+  padding: 0 17px;
   margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: @grey;
+  box-sizing: border-box;
+  padding-bottom: 6px;
 }
 
 .gallery__description-header {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+  padding-top: 17px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.gallery__description-content {
+  margin-top: 0;
 }
 
 .gallery__description-text {
@@ -56,12 +72,26 @@
   text-transform: uppercase;
 }
 
-.gallery__description {
-  background-color: @grey;
-}
-
 .gallery__like-text {
   color: @font-pink;
+  line-height: 24px;
+  font-family: @font;
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 32px;
+  margin-top: -4px;
+}
+
+.gallery__like-text::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  top: 5px;
+  left: 0;
+  background-image: url("../img/heart.svg");
+
 }
 
 .gallery__description-content {
@@ -75,6 +105,37 @@
   line-height: 30px;
   color: @font-grey;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.gallery__list-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.gallery__article {
+  margin-top: 20px;
+  margin-bottom: 21px;
+}
+
+.gallery__article:last-child {
+  margin-bottom: 0;
+}
+
+.gallery__description-list {
+  background-color: @grey;
+  margin-top: -20px;
+  padding: 0 17px;
+  padding-bottom: 7px;
+}
+
+.gallery__text-wrapper {
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 42px;
 }
 
 @media (min-width: @tablet-width) {
