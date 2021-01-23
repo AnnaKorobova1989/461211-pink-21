@@ -3,16 +3,23 @@
 }
 
 .photo-redaction__wrapper {
-  display: grid;
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 20px;
 }
 
 .photo-redaction__panel {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 230px;
+  width: 224px;
   margin: 0 auto;
-  align-items: baseline;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.photo-redaction__crop {
+  margin-left: -8px;
 }
 
 .photo-redaction__button {
@@ -25,7 +32,10 @@
   position: relative;
   height: 20px;
   background-color: transparent;
-  width: 20px;
+  width: 240px;
+  padding-top: 32px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .photo-redaction__scale {
@@ -35,25 +45,76 @@
 
 .photo-redaction__toggle {
   position: absolute;
-  top: 8px;
+  right: 33px;
+  top: 26px;
   width: 14px;
   height: 14px;
   border: 2px solid @font-pink;
   border-radius: 50%;
   box-sizing: border-box;
+  background-color: @white;
+  z-index: 1;
 }
 
-.photo-redaction__button--upload {
-  color: @font-pink;
+.photo-redaction__button {
+  border-radius: 30px;
+  padding: 16px 90px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  width: 280px;
+  cursor: pointer;
+
+  &--upload {
+    color: @font-pink;
+    cursor: pointer;
+    margin-top: 53px;
+    border: 3px solid @font-pink;
+    outline: none;
+  }
+
+  &--upload:hover {
+    background-color: @font-pink;
+    color: @white;
+    outline: none;
+  }
+
+  &--upload:active {
+    color: rgba(@white, 0.3);
+    outline: none;
+  }
+
+  &--cancel {
+    margin-top: 12px;
+    color: rgba(@font-grey, 0.1);
+    border: 3px solid rgba(@font-grey, 0.1);
+    padding: 16px 90px;
+    outline: none;
+  }
+
+  &--cancel:hover {
+    color: rgba(@font-grey, 0.3);
+    border: 3px solid rgba(@font-grey, 0.3);
+    outline: none;
+  }
+
+  &--cancel:active {
+    color: rgba(@white, 0.3);
+    background-color: rgba(@font-grey, 0.3);
+    border: 3px solid rgba(@font-grey, 0.3);
+    outline: none;
+  }
 }
 
-.photo-redaction__button--cancel {
-  color: rgba(@font-color, 0.1);
+.photo-redaction__buttons-wrapper {
+  padding-bottom: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .photo-redaction__wrapper {
-    grid-template-columns: 1fr 1fr;
+    width: 620px;
+    display: flex;
   }
 }
 
