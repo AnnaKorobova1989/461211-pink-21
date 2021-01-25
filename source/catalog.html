@@ -55,11 +55,10 @@
             </picture>
             <div class="gallery__description gallery__description--panorama">
               <div class="gallery__description-panorama--wrapper">
-                <h3 class="gallery__description-header">Анна</h3>
-                <span class="gallery__description-text">(5 минут назад)</span>
-                <p class="gallery__description-content">Прыгать или нет? Напишите&nbsp;в комментарии свой&nbsp;совет и смотрите прямую трансляцию&nbsp;в перископе,&nbsp;задавайте&nbsp;свои&nbsp;вопросы!</p>
-                <div class="gallery__like-container">
-                  <p class="gallery__like-text">Нравится: 215</p>
+                <h3 class="gallery__description-header--panorama">Анна <span class="gallery__description-text">(5 минут назад)</span></h3>
+                <p class="gallery__description-content--panorama">Прыгать или нет? Напишите&nbsp;в комментарии свой&nbsp;совет и смотрите прямую трансляцию&nbsp;в перископе,&nbsp;задавайте&nbsp;свои&nbsp;вопросы!</p>
+                <div class="gallery__like-container--panorama">
+                  <p class="gallery__like-text--panorama">Нравится: 215</p>
                 <div>
               </div>
             </div>
@@ -76,8 +75,7 @@
                 </picture>
               </figure>
               <div class="gallery__description gallery__description-list">
-                <h3 class="gallery__description-header">Левон</h3>
-                <span class="gallery__description-text">(5 часов назад)</span>
+                <h3 class="gallery__description-header">Левон <span class="gallery__description-text">(5 часов назад)</span></h3>
                 <p class="gallery__description-content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <div class="gallery__like-container">
                   <p class="gallery__like-text">Нравится: 356</p>
@@ -93,8 +91,7 @@
                 </picture>
               </figure>
               <div class="gallery__description gallery__description-list">
-                <h3 class="gallery__description-header">Антон</h3>
-                <span class="gallery__description-text">(12 часов назад)</span>
+                <h3 class="gallery__description-header">Антон <span class="gallery__description-text">(12 часов назад)</span></h3>
                 <p class="gallery__description-content">Соседи будут рады!</p>
                 <div class="gallery__like-container">
                   <p class="gallery__like-text">Нравится: 666</p>
@@ -110,8 +107,7 @@
                 </picture>
               </figure>
               <div class="gallery__description gallery__description-list">
-                <h3 class="gallery__description-header">Борис</h3>
-                <span class="gallery__description-text">(20 часов назад)</span>
+                <h3 class="gallery__description-header">Борис <span class="gallery__description-text">(20 часов назад)</span></h3>
                 <p class="gallery__description-content">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <div class="gallery__like-container">
                   <p class="gallery__like-text">Нравится: 215</p>
@@ -127,8 +123,7 @@
                 </picture>
               </figure>
               <div class="gallery__description gallery__description-list">
-                <h3 class="gallery__description-header">Сергей</h3>
-                <span class="gallery__description-text">(25 часов назад)</span>
+                <h3 class="gallery__description-header">Сергей <span class="gallery__description-text">(25 часов назад)</span></h3>
                 <p class="gallery__description-content">Самая кубанская в мире!</p>
                 <div class="gallery__like-container">
                   <p class="gallery__like-text">Нравится: 4</p>
@@ -144,8 +139,7 @@
                 </picture>
               </figure>
               <div class="gallery__description gallery__description-list">
-                <h3 class="gallery__description-header">Максим</h3>
-                <span class="gallery__description-text">(40 часов назад)</span>
+                <h3 class="gallery__description-header">Максим <span class="gallery__description-text">(40 часов назад)</span></h3>
                 <p class="gallery__description-content">Где снег-то?</p>
                 <div class="gallery__like-container">
                   <p class="gallery__like-text">Нравится: 150</p>
@@ -161,8 +155,7 @@
                 </picture>
               </figure>
               <div class="gallery__description gallery__description-list">
-                <h3 class="gallery__description-header">Надежда</h3>
-                <span class="gallery__description-text">(45 часов назад)</span>
+                <h3 class="gallery__description-header">Надежда <span class="gallery__description-text">(45 часов назад)</span></h3>
                 <p class="gallery__description-content">Всем GM и взаимные лайки!</p>
                 <div class="gallery__like-container">
                   <p class="gallery__like-text">Нравится: 2560</p>
@@ -182,42 +175,44 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/editor-photo-desktop.jpg 1x, img/editor-photo-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/editor-photo-tablet.jpg 1x, img/editor-photo-tablet@2x.jpg 2x">
-            <img src="img/editor-photo-mobile.jpg" srcset="img/editor-photo-mobile@2x.jpg 2x" alt="">
+            <img class="photo-redaction__example" src="img/editor-photo-mobile.jpg" srcset="img/editor-photo-mobile@2x.jpg 2x" alt="">
           </picture>
           <div class="photo-redaction__panel-wrapper">
-            <div class="photo-redaction__panel">
-              <div class="photo-redaction__crop">
-                <img src="img/crop.svg" alt="Обрезка изображения">
-              </div>
-              <div class="photo-redaction__fill">
-                <img src="img/fill.svg" alt="Заливка изображения">
-              </div>
-              <div class="photo-redaction__contrast">
-                <img src="img/contrast.svg" alt="Контрастность изображения">
-              </div>
-            </div>
-            <div class="photo-redaction__range-filter">
-              <div class="photo-redaction__range-controls">
-                <div class="photo-redaction__scale">
-                  <div class="photo-redaction__bar"></div>
+            <div class="photo-redaction__control-panel">
+              <div class="photo-redaction__panel">
+                <div class="photo-redaction__crop">
+                  <img src="img/crop.svg" alt="Обрезка изображения">
                 </div>
-                <div class="photo-redaction__toggle"></div>
-              </div>
-            </div>
-            <div class="photo-redaction__range-filter">
-              <div class="photo-redaction__range-controls">
-                <div class="photo-redaction__scale">
-                  <div class="photo-redaction__bar"></div>
+                <div class="photo-redaction__fill">
+                  <img src="img/fill.svg" alt="Заливка изображения">
                 </div>
-                <div class="photo-redaction__toggle"></div>
-              </div>
-            </div>
-            <div class="photo-redaction__range-filter">
-              <div class="photo-redaction__range-controls">
-                <div class="photo-redaction__scale">
-                  <div class="photo-redaction__bar"></div>
+                <div class="photo-redaction__contrast">
+                  <img src="img/contrast.svg" alt="Контрастность изображения">
                 </div>
-                <div class="photo-redaction__toggle"></div>
+              </div>
+              <div class="photo-redaction__range-filter photo-redaction__range-filter--crop">
+                <div class="photo-redaction__range-controls">
+                  <div class="photo-redaction__scale">
+                    <div class="photo-redaction__bar"></div>
+                  </div>
+                  <div class="photo-redaction__toggle"></div>
+                </div>
+              </div>
+              <div class="photo-redaction__range-filter photo-redaction__range-filter--fill">
+                <div class="photo-redaction__range-controls">
+                  <div class="photo-redaction__scale">
+                    <div class="photo-redaction__bar"></div>
+                  </div>
+                  <div class="photo-redaction__toggle"></div>
+                </div>
+              </div>
+              <div class="photo-redaction__range-filter photo-redaction__range-filter--contrast">
+                <div class="photo-redaction__range-controls">
+                  <div class="photo-redaction__scale">
+                    <div class="photo-redaction__bar"></div>
+                  </div>
+                  <div class="photo-redaction__toggle"></div>
+                </div>
               </div>
             </div>
             <div class="photo-redaction__buttons-wrapper">
