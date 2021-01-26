@@ -6,9 +6,6 @@
                     margin-left: -72px;
                     margin-top: -17px;
                   }
-                  .logo:hover {
-                    fill: #D22856;
-                  }
                   .logo__glasses-desk,
                   .logo__glasses-tablet,
                   .logo__glasses,
@@ -24,9 +21,6 @@
                     }
                     .logo__glasses-tablet {
                       display: block;
-                    }
-                    .logo__glasses-tablet:hover {
-                      fill: red;
                     }
                   }
                   @media (min-width: 1200px) {
