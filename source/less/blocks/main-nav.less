@@ -19,16 +19,10 @@
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-image: url("../img/logo-mobile-header.svg");
+}
 
-  &:hover {
-    background-image: url("../img/logo-pink-header.svg");
-  }
-
-  &:active {
-    background-image: url("../img/logo-mobile-header.svg");
-    opacity: 0.3;
-  }
+.main-nav__logo-img:hover {
+  fill: @font-pink;
 }
 
 .main-nav__button {
@@ -189,17 +183,6 @@
     height: 40px;
     margin-top: 5px;
   }
-
-  .main-nav__logo-link {
-    background-image: url("../img/logo-tablet.svg");
-
-    &:hover {
-      background-image: url("../img/logo-pink.svg");
-    }
-    &:active {
-      background-image: url("../img/logo-tablet-active.svg");
-    }
-  }
 }
 
 
@@ -221,15 +204,6 @@
     width: 170px;
   }
 
-  .main-nav__logo-link {
-    background-image: url("../img/logotype-white-desktop.svg");
-    background-position: 10px 0;
-
-    &:hover {
-      background-image: url("../images/logotype-pink-desktop.svg");
-    }
-  }
-
   .main-nav__button {
     display: none;
   }
@@ -241,14 +215,15 @@
 
   .main-nav__list {
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 8px;
     display: flex;
   }
 
   .main-nav__item {
     width: auto;
     box-shadow: none;
-    margin-left: 85px;
+    margin-right: 5px;
+    margin-left: 79px;
   }
 
   .main-nav__link {

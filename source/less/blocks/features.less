@@ -23,17 +23,18 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  padding-top: 60px;
+  padding-top: 61px;
 }
 
 .features__item {
-  margin-bottom: 25px;
+  margin-bottom: 31px;
 }
 
 .features__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  margin-top: 20px;
 }
 
 .features__description {
@@ -41,6 +42,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
+  margin-top: -6px;
 }
 
 @media (min-width: @tablet-width) {
@@ -48,7 +50,7 @@
     background-image: url("../img/features-bg-tablet.png");
     background-position: center 44px;
     background-repeat: no-repeat;
-    margin-top: -105px;
+    margin-top: -109px;
   }
   .features__wrapper {
     width: 620px;
@@ -61,6 +63,11 @@
     min-height: 506px;
     background-image: url("../img/iphone-tablet.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-tablet@2x.png");
+      background-size: 268px auto;
+    }
   }
   .features__list-container {
     display: flex;
@@ -76,7 +83,7 @@
   }
   .features__title {
     margin: 0;
-    padding-bottom: 0;
+    padding-bottom: 19px;
   }
 }
 
@@ -85,7 +92,7 @@
     background-image: url("../img/features-bg-tablet.png");
     background-position: center 44px;
     background-repeat: no-repeat;
-    margin-top: 40px;
+    margin-top: -104px;
   }
   .features__pictures {
     display: grid;
@@ -120,6 +127,7 @@
   .features__description {
     font-size: 18px;
     line-height: 30px;
+    margin-top: 2px;
   }
   .features__wrapper {
     background-image: none;
@@ -138,5 +146,17 @@
     text-align: center;
     justify-content: space-around;
     margin-top: 57px;
+  }
+  .features__title--left {
+    margin-left: -12px;
+  }
+  .features__title--right {
+    margin-left: 12px;
+  }
+  .features__description--left {
+    margin-left: -12px;
+  }
+  .features__description--right {
+    margin-right: -9px;
   }
 }

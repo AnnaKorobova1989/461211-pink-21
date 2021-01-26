@@ -54,6 +54,11 @@
   box-sizing: border-box;
   background-color: @white;
   z-index: 1;
+  cursor: pointer;
+
+  &:active {
+    background-color: @font-pink;
+  }
 }
 
 .photo-redaction__button {
@@ -222,7 +227,7 @@
   }
   .photo-redaction__wrapper {
     grid-template-columns: 1fr 1fr;
-    margin: 0 130px;
+    margin: 0 auto;
     width: 940px;
     background-color: @grey;
     padding-bottom: 48px;
@@ -271,15 +276,24 @@
   .photo-redaction__buttons-wrapper {
     display: flex;
     align-items: center;
-    margin-left: 0;
-    width: 10px;
+    margin-left: 5px;
+    width: 411px;
+    justify-content: space-between;
+    padding-bottom: 0;
+    margin-top: 133px;
   }
   .photo-redaction__button--upload {
       margin-top: 0;
       margin-bottom: 0;
+      width: 183px;
+      padding-left: 50px;
+      padding-right: 50px;
   }
   .photo-redaction__button--cancel {
       margin-top: 0;
       margin-bottom: 0;
+      width: 183px;
+      padding-right: 50px;
+      padding-left: 50px;
   }
 }

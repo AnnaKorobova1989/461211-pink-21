@@ -53,6 +53,10 @@
   background-position: 8% -2%;
   background-size: cover;
   padding: 0 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
 }
 
 .main-header__wrapper {
@@ -73,7 +77,11 @@
   .main-header__title {
     background-image: url("../img/back-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: 8% -2%;
+    background-position: 8% -3%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 }
 
@@ -88,5 +96,14 @@
   }
   .main-header__wrapper {
     padding: 0 130px;
+  }
+  .main-header__title {
+    background-image: url("../img/background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 8% -10%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }

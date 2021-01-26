@@ -5,7 +5,7 @@
   width: 262.5%;
   text-transform: uppercase;
   text-align: center;
-  margin-top: -10px;
+  margin-top: -15px;
   font-size: 14px;
 }
 
@@ -66,7 +66,7 @@
 .table-cost__available {
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 16px;
   display: block;
   font-size: 0;
   width: 31px;
@@ -79,7 +79,7 @@
 .table-cost__unavailable {
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 16px;
   display: block;
   font-size: 0;
   width: 27px;
@@ -122,12 +122,12 @@
 }
 
 @media (min-width: @mobile-width-only) {
-  .price__table {
+  .table-cost {
     left: 0;
     width: 94%;
     max-width: 940px;
     margin: 0 auto;
-    margin-top: -32px;
+    margin-top: -34px;
     margin-bottom: -30px;
   }
   .table-cost__caption-row {
@@ -157,7 +157,7 @@
   }
   .table-cost__caption-cell {
     height: 85px;
-    padding-top: 23px;
+    padding-top: 19px;
   }
   .table-cost__caption-cell--hit {
     width: auto;
@@ -182,7 +182,7 @@
   }
 
   .table-cost__value {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     font-style: normal;
   }
@@ -216,5 +216,37 @@
     .table-cost__setting {
       left: 68%;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-cost {
+    max-width: 939px;
+    margin-top: 12px;
+    margin-bottom: -2px;
+  }
+  .table-cost__setting {
+    font-size: 18px;
+    margin-left: 21px;
+  }
+  .table-cost__cell {
+    height: 60px;
+  }
+  .table-cost__caption-cell {
+    height: 100px;
+  }
+ .table-cost__caption-cell--hit::after {
+    background-image: url("../img/hit ribbon.svg");
+  }
+  .table-cost__title {
+    font-size: 18px;
+  }
+  .table-cost__value {
+    font-size: 24px;
+    margin-top: 17px;
+  }
+  .table-cost__available,
+  .table-cost__unavailable {
+    top: 15px;
   }
 }
