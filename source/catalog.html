@@ -14,9 +14,9 @@
               <p class="main-nav__logo">
               <a href="index.html" class="main-nav__logo-link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+                  <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
                   <source media="(min-width: 660px)" srcset="img/logo-tablet.svg">
-                  <img src="img/logo-mobile-header.svg" alt="Логотип">
+                  <img class="main-nav__logo-img" src="img/logo-mobile-header.svg" alt="Логотип">
                 </picture>
               </a>
               </p>
@@ -45,28 +45,30 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="main-header__title">
+      <div class="main-header">
         <h1 class="main-header__catalog">Фотографии пользователей</h1>
       </div>
       <section class="gallery">
         <h2 class="visually-hidden">Фотографии пользователей приложения</h2>
         <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <article class="gallery__item">
-          <figure class="gallery__figure gallery__figure--panorama">
-            <div class="gallery__panorama">Панорама дня</div>
+          <figure class="gallery__figure gallery__figure-panorama">
+            <div class="gallery__panorama-wrapper">
+              <div class="gallery__panorama">Панорама дня</div>
+            </div>
             <a class="gallery__photo-link">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото дня">
+              <img class="gallery__panorama-img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото дня">
             </picture>
             </a>
-            <div class="gallery__description gallery__description--panorama">
-              <div class="gallery__description-panorama--wrapper">
-                <h3 class="gallery__description-header--panorama">Анна <span class="gallery__description-text">(5 минут назад)</span></h3>
-                <p class="gallery__description-content--panorama">Прыгать или нет? Напишите&nbsp;в комментарии свой&nbsp;совет и смотрите прямую трансляцию&nbsp;в перископе,&nbsp;задавайте&nbsp;свои&nbsp;вопросы!</p>
-                <div class="gallery__like-container--panorama">
-                  <p class="gallery__like-text--panorama">Нравится: 215</p>
+            <div class="gallery__description gallery__description-panorama">
+              <div class="gallery__description-panorama-wrapper">
+                <h3 class="gallery__description-header-panorama">Анна <span class="gallery__description-text">(5 минут назад)</span></h3>
+                <p class="gallery__description-content-panorama">Прыгать или нет? Напишите&nbsp;в комментарии свой&nbsp;совет и смотрите прямую трансляцию&nbsp;в перископе,&nbsp;задавайте&nbsp;свои&nbsp;вопросы!</p>
+                <div class="gallery__like-container-panorama">
+                  <p class="gallery__like-text-panorama">Нравится: 215</p>
                 </div>
               </div>
             </div>
@@ -78,7 +80,7 @@
               <figure class="gallery__figure">
               <a class="gallery__photo-link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
                   <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="">
                 </picture>
@@ -96,7 +98,7 @@
               <figure class="gallery__figure">
               <a class="gallery__photo-link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                   <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="">
                 </picture>
@@ -114,7 +116,7 @@
               <figure class="gallery__figure">
               <a class="gallery__photo-link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                   <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="">
                 </picture>
@@ -132,7 +134,7 @@
               <figure class="gallery__figure">
               <a class="gallery__photo-link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
                   <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="">
                 </picture>
@@ -150,7 +152,7 @@
               <figure class="gallery__figure">
               <a class="gallery__photo-link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
                   <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="">
                 </picture>
@@ -168,7 +170,7 @@
               <figure class="gallery__figure">
               <a class="gallery__photo-link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
                   <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="">
                 </picture>
@@ -187,13 +189,13 @@
         <div class="gallery__text-wrapper">
           <p class="gallery__text">Затмите их всех!</p>
           <p class="gallery__text">Выкладывайте все, что накопилось в телефоне!</p>
-       </div>
+        </div>
       </section>
       <section class="photo-redaction">
         <div class="photo-redaction__wrapper">
           <h2 class="visually-hidden">Редактор фотографий</h2>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/editor-photo-desktop.jpg 1x, img/editor-photo-desktop@2x.jpg 2x">
+            <source media="(min-width: 960px)" srcset="img/editor-photo-desktop.jpg 1x, img/editor-photo-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/editor-photo-tablet.jpg 1x, img/editor-photo-tablet@2x.jpg 2x">
             <img class="photo-redaction__example" src="img/editor-photo-mobile.jpg" srcset="img/editor-photo-mobile@2x.jpg 2x" alt="">
           </picture>
@@ -201,13 +203,13 @@
             <div class="photo-redaction__control-panel">
               <div class="photo-redaction__panel">
                 <div class="photo-redaction__crop">
-                  <img src="img/crop.svg" alt="Обрезка изображения">
+                  <img src="img/crop.svg" width="44" height="44" alt="Обрезка изображения">
                 </div>
                 <div class="photo-redaction__fill">
-                  <img src="img/fill.svg" alt="Заливка изображения">
+                  <img src="img/fill.svg" width="48" height="43" alt="Заливка изображения">
                 </div>
                 <div class="photo-redaction__contrast">
-                  <img src="img/contrast.svg" alt="Контрастность изображения">
+                  <img src="img/contrast.svg" width="32" height="32" alt="Контрастность изображения">
                 </div>
               </div>
               <div class="photo-redaction__range-filter photo-redaction__range-filter--crop">
@@ -255,12 +257,12 @@
           </svg>
         </a>
         <div class="footer__social">
-          <a class="footer__social-icon footer__social--twitter" href=""></a>
-          <a class="footer__social-icon footer__social--facebook" href=""></a>
-          <a class="footer__social-icon footer__social--youtube" href=""></a>
+          <a class="footer__social-icon footer__social-twitter" href=""></a>
+          <a class="footer__social-icon footer__social-facebook" href=""></a>
+          <a class="footer__social-icon footer__social-youtube" href=""></a>
         </div>
         <div class="footer__copyright">
-          <a class="footer__copyright--info" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+          <a class="footer__copyright-info" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
           <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="footer__logo-svg" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="footer__logo-svg" d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>

@@ -52,6 +52,7 @@
     background-repeat: no-repeat;
     margin-top: -109px;
   }
+
   .features__wrapper {
     width: 620px;
     padding: 0 20px;
@@ -69,6 +70,7 @@
       background-size: 268px auto;
     }
   }
+
   .features__list-container {
     display: flex;
     flex-direction: column;
@@ -78,9 +80,11 @@
     margin-bottom: 10px;
     padding-top: 24px;
   }
+
   .features__item {
     margin-bottom: 18px;
   }
+
   .features__title {
     margin: 0;
     padding-bottom: 19px;
@@ -90,10 +94,12 @@
 @media (min-width: @desktop-width) {
   .features {
     background-image: url("../img/features-bg-tablet.png");
-    background-position: center 44px;
+    background-position: center top;
     background-repeat: no-repeat;
-    margin-top: -104px;
+    padding-top: 0;
+    margin-top: 0;
   }
+
   .features__pictures {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -101,16 +107,20 @@
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 0;
+    padding-top: 56px;
   }
+
   .features__pictures-item {
     height: 300px;
     overflow: hidden;
   }
+
   .features__item {
     width: 240px;
     position: relative;
   }
+
   .features__item::after {
     content: "";
     width: 285px;
@@ -120,24 +130,28 @@
     left: -30px;
     position: absolute;
   }
+
   .features__title {
     font-size: 30px;
     line-height: 30px;
   }
+
   .features__description {
     font-size: 18px;
     line-height: 30px;
     margin-top: 2px;
   }
+
   .features__wrapper {
     background-image: none;
-    width: 940px;
-    padding: 0 130px;
+    width: 960px;
+    margin: 0 auto;
   }
+
   .features__list-container {
     display: flex;
     flex-direction: row;
-    width: 940px;
+    width: 960px;
     top: 200px;
     left: -140px;
     padding: 0;
@@ -147,16 +161,20 @@
     justify-content: space-around;
     margin-top: 57px;
   }
+
   .features__title--left {
-    margin-left: -12px;
+    margin-left: 0;
   }
+
   .features__title--right {
-    margin-left: 12px;
+    margin-left: 0;
   }
+
   .features__description--left {
-    margin-left: -12px;
+    margin-left: 0;
   }
+
   .features__description--right {
-    margin-right: -9px;
+    margin-right: 0;
   }
 }

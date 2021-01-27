@@ -1,4 +1,4 @@
-.main-header {
+.main-header__title {
   font-size: 24px;
   line-height: 33px;
   font-style: normal;
@@ -37,6 +37,7 @@
     line-height: 68px;
     font-weight: 300;
   }
+
   @media (min-width: @desktop-width) {
     width: 360px;
     padding-top: 211px;
@@ -45,7 +46,7 @@
 }
 
 
-.main-header__title {
+.main-header {
   margin: 0 auto;
   background-color: @dark-blue;
   background-image: url("../img/back-mobile.jpg");
@@ -66,15 +67,17 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-header {
+  .main-header__title {
     font-weight: 300;
     font-size: 50px;
     line-height: 68px;
   }
+
   .main-header__wrapper {
     padding: 0 20px;
   }
-  .main-header__title {
+
+  .main-header {
     background-image: url("../img/back-tablet.jpg");
     background-repeat: no-repeat;
     background-position: 8% -3%;
@@ -86,7 +89,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-header {
+  .main-header__title {
     font-weight: 300;
     font-size: 50px;
     line-height: 68px;
@@ -94,10 +97,12 @@
     width: 760px;
     padding-bottom: 90px;
   }
+
   .main-header__wrapper {
     padding: 0 130px;
   }
-  .main-header__title {
+
+  .main-header {
     background-image: url("../img/background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: 8% -10%;
