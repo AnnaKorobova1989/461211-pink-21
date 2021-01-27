@@ -30,21 +30,21 @@
   margin: 0;
 }
 
-.gallery__figure--panorama {
+.gallery__figure-panorama {
   position: relative;
   margin: 0 auto;
   width: 100%;
 }
 
-.gallery__figure--panprama img {
+.gallery__figure-panprama img {
   width: 100%;
 }
 
-.gallery__description--panorama {
+.gallery__description-panorama {
   margin-top: -20px;
 }
 
-.gallery__description-panorama--wrapper {
+.gallery__description-panorama-wrapper {
   width: 280px;
   padding: 0 17px;
   margin: 0 auto;
@@ -54,7 +54,7 @@
 }
 
 .gallery__description-header,
-.gallery__description-header--panorama, {
+.gallery__description-header-panorama, {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -64,12 +64,12 @@
 }
 
 .gallery__description-content,
-.gallery__description-content--panorama {
+.gallery__description-content-panorama {
   margin-top: 0;
 }
 
 .gallery__description-text,
-.gallery__description-text--panorama {
+.gallery__description-text-panorama {
   font-size: 12px;
   line-height: 24px;
   font-weight: 300;
@@ -78,7 +78,7 @@
 }
 
 .gallery__like-text,
-.gallery__like-text--panorama {
+.gallery__like-text-panorama {
   color: @font-pink;
   line-height: 24px;
   font-family: @font;
@@ -90,7 +90,7 @@
 }
 
 .gallery__like-text::before,
-.gallery__like-text--panorama::before,{
+.gallery__like-text-panorama::before {
   content: "";
   position: absolute;
   width: 13px;
@@ -148,6 +148,7 @@
   .gallery__article {
     margin-bottom: 2px;
   }
+
   .gallery__list-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -155,30 +156,37 @@
     width: 620px;
     margin-top: 30px;
   }
+
   .gallery__text {
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
   }
+
   .gallery__text-wrapper {
     width: 430px;
     padding-top: 63px;
     padding-bottom: 70px;
   }
+
   .gallery__like-text {
     margin-bottom: 16px;
     padding-left: 0;
   }
+
   .gallery__like-text::before {
     left: 227px;
   }
-  .gallery__like-text--panorama {
+
+  .gallery__like-text-panorama {
     margin-bottom: 0;
     padding-right: 42px;
   }
-  .gallery__like-text--panorama::before {
+
+  .gallery__like-text-panorama::before {
     left: 137px;
   }
+
   .gallery__slogan {
     font-size: 18px;
     line-height: 30px;
@@ -186,14 +194,16 @@
     margin-bottom: 27px;
     padding-top: 90px;
   }
-  .gallery__figure--panorama {
+
+  .gallery__figure-panorama {
     width: 100%;
   }
+
   .gallery__panorama {
-    top: 10px;
     top: 55px;
     left: 500px;
   }
+
   .gallery__description-list {
     display: flex;
     flex-direction: column;
@@ -201,11 +211,13 @@
     padding-left: 30px;
     padding-top: 4px;
   }
+
   .gallery__like-container,
-  .gallery__like-container--panorama {
+  .gallery__like-container-panorama {
     margin-top: auto;
   }
-  .gallery__description-panorama--wrapper {
+
+  .gallery__description-panorama-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -214,13 +226,16 @@
     padding-top: 5px;
     padding-left: 30px;
   }
-  .gallery__description-header--panorama {
+
+  .gallery__description-header-panorama {
     order: 1;
   }
-  .gallery__description-content--panorama {
+
+  .gallery__description-content-panorama {
     order: 3;
   }
-  .gallery__like-container--panorama {
+
+  .gallery__like-container-panorama {
     order: 2;
     margin-left: auto;
   }
@@ -233,35 +248,53 @@
     padding-top: 92px;
     padding-bottom: 88px;
   }
+
   .gallery__panorama {
-    left: 930px;
+    right: 10px;
+    top: 52px;
+    left: auto;
   }
-  .gallery__description--panorama {
+
+  .gallery__panorama-img {
+    width: 100%;
+    height: 506px;
+  }
+
+  .gallery__panorama-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .gallery__description-panorama {
     margin-top: -19px;
   }
+
   .gallery__list-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     margin: 0 auto;
-  }
-  .gallery__figure--panorama {
-    width: 100%;
-  }
-  .gallery__description-panorama--wrapper {
-    width: 940px;
-    margin: 0 auto;
-    padding-left: 27px;
-  }
-  .gallery__list-wrapper {
     width: 940px;
     margin-top: 27px;
     row-gap: 32px;
   }
+
+  .gallery__figure-panorama {
+    width: 100%;
+  }
+
+  .gallery__description-panorama-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 27px;
+  }
+
   .gallery__description-list {
     padding-left: 27px;
     padding-top: 7px;
   }
+
   .gallery__text-wrapper {
     padding-top: 56px;
     padding-bottom: 65px;
